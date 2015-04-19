@@ -20,6 +20,5 @@ defmodule Prime do
 	defp _prime([head | tail], prime_list) do
 		_prime(Enum.reject(tail, &(rem(&1, head)==0)), [head|prime_list])
 	end
-	
 end
 
